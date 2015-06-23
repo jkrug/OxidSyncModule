@@ -45,6 +45,7 @@ $aModule = array(
     ),
     'files' => array(
         'ONGRUrlHelper' => 'ongr/ongr_sync/ONGR/ONGRUrlHelper.php',
+        'ONGREvents' => 'ongr/ongr_sync/ONGR/ONGREvents.php',
     ),
     'templates' => array(),
     'settings'      => [
@@ -55,5 +56,8 @@ $aModule = array(
             'value' => 'http://test.dev/',
         ],
     ],
-    'blocks' => array()
+    'blocks' => array(),
+    'events' => array(
+        'onActivate'    => 'ONGREvents::onActivate'
+    )
 );
